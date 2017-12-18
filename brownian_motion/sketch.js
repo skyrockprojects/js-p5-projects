@@ -37,5 +37,10 @@ function draw(){
 	//Calculate new values of x and y
 	x = x + random(-stepSize, stepSize);
 	y = y + random(-stepSize, stepSize);
+
+	//TODO
+	//Make sure x and y are inside the box drawn in line 13. 
+	//You can use max() and min() functions
+
 	ellipse(x,y,particleSize);
 }
