@@ -4,21 +4,27 @@ var stepSlider;
 var mySpan;
 
 function setup(){
+	
 	createElement('h3','Brownian Motion');
 	createCanvas(600, 400);
+	background(255)
+	
+
+
 
 	//settings to draw outer rect
-	stroke('black');
+	stroke('black'); //black line
 	noFill();
-	rect(30,20,600-60,400-60);
+	rect(30,20,600-60,400-60);//dimensions
 
 	//settings to draw particle
-	fill('black');
+	fill(155);
 	x = 300;
 	y = 200;
 	particleSize = 2;
 	ellipse(x,y,particleSize);
-
+}
+	/*
 	//create text
 	createElement('br');
 	mySpan = createSpan('Step size: ');
