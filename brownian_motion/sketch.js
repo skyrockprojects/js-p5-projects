@@ -14,20 +14,24 @@ function setup(){
 
 	//settings to draw outer rect
 	stroke('black'); //black line
-	noFill();
+	noFill(); //means no back ground colour in the box
 	rect(30,20,600-60,400-60);//dimensions
 
 	//settings to draw particle
-	fill(155);
+	fill('black');
 	x = 300;
 	y = 200;
 	particleSize = 2;
 	ellipse(x,y,particleSize);
-}
-	/*
+
+
 	//create text
 	createElement('br');
 	mySpan = createSpan('Step size: ');
+
+
+
+
 
 	//draw slider
 	stepSlider = createSlider(1,10,3);
@@ -47,6 +51,11 @@ function draw(){
 	//TODO
 	//Make sure x and y are inside the box drawn in line 13. 
 	//You can use max() and min() functions
+	x = max(30, x);
+    x = min(570, x);
+
+    y = max(20, y);
+    y = min(360, y);
 
 	ellipse(x,y,particleSize);
 }
