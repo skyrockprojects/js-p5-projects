@@ -7,7 +7,7 @@ function setup(){
 	
 	createElement('h3','Brownian Motion');
 	createCanvas(600, 400);
-	background(255)
+	background(150)
 	
 
 
@@ -23,7 +23,6 @@ function setup(){
 	y = 200;
 	particleSize = 2;
 	ellipse(x,y,particleSize);
-
 
 	//create text
 	createElement('br');
