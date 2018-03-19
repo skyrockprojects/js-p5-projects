@@ -7,7 +7,7 @@ function setup(){
 	
 	createElement('h3','Brownian Motion');
 	createCanvas(600, 400);
-	background(150)
+	background(255)
 	
 
 
