@@ -47,11 +47,11 @@ function draw(){
 	//TODO
 	//Make sure x and y are inside the box drawn in line 13. 
 	//You can use max() and min() functions
-	x = max(30, x);
+	x = max(30, x); //what happens if you change x to a different number
     x = min(570, x);
 
     y = max(20, y);
-    y = min(360, y);
+    y = min(380, y);
 
 	ellipse(x,y,particleSize);
 }
