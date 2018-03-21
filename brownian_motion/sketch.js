@@ -8,8 +8,6 @@ function setup(){
 	createElement('h3','Brownian Motion');
 	createCanvas(600, 400);
 	background(255)
-	
-
 
 
 	//settings to draw outer rect
@@ -27,7 +25,6 @@ function setup(){
 	//create text
 	createElement('br');
 	mySpan = createSpan('Step size: ');
-
 
 
 
