@@ -40,7 +40,7 @@ function drawPlanet(index){
 	var b = a * 0.7;
 	times[index] = times[index] - tickRates[index];//negative will make orbits go counterclockwise
 	x = width/2 + a * cos(times[index]);//width/2 means initial place
-	y = height/2 + b * sin(times[index]);//heighht/2 means initial place
+	y = height/2 + b * sin(times[index]);//height/2 means initial place
 	fill('white');
 	var size = 4 * log(planetSizes[index]);//number is for controling the size
 	ellipse(x,y,size);
