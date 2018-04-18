@@ -3,9 +3,6 @@ var t = 0;
 var currentOrbit = 1;
 
 var r = 0;
-var r_out = 0;
-var tx,ty;
-
 var bgColor = 0;
 
 var stopWaveFromDrawingAgain = false;
