@@ -18,7 +18,7 @@ function setup(){
 }
 
 function draw(){
-	bgColor /= 1.03;// because bgColor will turn white by creating the flash,so it will set up bgcolor from white and then excute "bgColor /= 1.03;" fading into black
+	bgColor /= 1.03;// because bgColor will turn white by creating the flash,so it will set up bgcolor from white and then excute "bgColor /= 1.03;" fading into black
 	background(bgColor);
 	drawNucleus();
 	drawOrbits();
@@ -45,9 +45,9 @@ function drawOrbits(){
 	noFill();
 	stroke('white');
 	for(var i = 1; i <= 5; i++){
-		ellipse(width/2, height/2, step*i*2); //"step" is a consist variable to creat atomic orbitals 
+		ellipse(width/2, height/2, step*i*2); //"step" is a constant variable to creat atomic orbitals 
 		//width/2, height/2 make the orbits draw from the middle
-		//step*i*2 times 2 just for diameter to fit x,y values of "drawElectron()
+		//step*i*2 times 2 just for diameter to fit x,y values of "drawElectron()
 	}
 }
 
@@ -65,7 +65,7 @@ function drawElectron(){
 
 
 function drawWave(){
-	if(stopWaveFromDrawingAgain){//because of the "if (r >= width/2 - step*currentOrbit)", it will know the wave reach the level of current orbit
+	if(stopWaveFromDrawingAgain){//because of the "if (r >= width/2 - step*currentOrbit)", it will know the wave reach the level of current orbit
 		return;///ask computer to do nothing. 
 	}
 	if(currentOrbit == 5){//when the ekectron stay in level 5 then you do nothing
@@ -76,7 +76,7 @@ function drawWave(){
 	noFill();
 	ellipse(0, height/2, 2*r);//0, height/2 means start point, 2*r means diameter
 	if (r >= width/2 - step*currentOrbit){//when the wave reach the orbit which current electron is on it will do someting
-		currentOrbit++;//consist variable to store the level of electron
+		currentOrbit++;//constant variable to store the level of electron
 		stopWaveFromDrawingAgain = true;// it change to true then first if will make it not to draw
 		r = 0;//initial the radius 
 	}
@@ -88,7 +88,7 @@ function mouseReleased(){
 
 function reduceOrbit(){
 	if(currentOrbit > 1){//control limitation level of the orbit is one 
-		bgColor = 255;//creat the flash, set up bgcolor from white and then excute bgColor /= 1.03; fading into black
+		bgColor = 255;//creat the flash, set up bgcolor from white and then excute bgColor /= 1.03; fading into black
 		currentOrbit--;
 	}
 }
